@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diya Patel - Portfolio</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <style>
+        body {
+            background: #121212;
+            color: #E0E0E0;
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden;
+        }
+
+        .navbar {
+            background: #1F1F1F;
+            border-bottom: 2px solid #F0C040;
+        }
+
+        .navbar-nav .nav-link {
+            font-weight: 500;
+            letter-spacing: 1px;
+            padding: 10px 20px;
+            color: #FFFFFF;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #F0C040;
+            text-shadow: 0 0 5px #F0C040, 0 0 10px #F0C040;
+        }
+
+        .navbar-brand {
+            font-weight: 600;
+            font-size: 1.5rem;
+            color: #F0C040;
+        }
+
+        header {
+            height: 80vh;
+            background: url(images/htmlweb21images.webp) fixed;
+            text-align: center;
+            padding: 200px 0;
+            color: #E0E0E0;
+            position: relative;
+            animation: fadeIn 1s ease-out;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: 600;
+            animation: slideUp 1s ease-out;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            animation: fadeIn 1.2s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(30px);
+            }
+
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        .card {
+            background: #333333;
+            color: #FFFFFF;
+            border: none;
+            transition: transform 0.3s, box-shadow 0.3s ease, background-color 0.3s ease;
+            border-radius: 8px;
+        }
+
+        .card-body {
+            padding: 30px;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 0px 15px rgba(173, 216, 230, 0.3);
+            background: #444444;
+        }
+
+        .card:hover .card-body {
+            z-index: 2;
+        }
+
+        .btn-accent {
+            background: #D4AF37;
+            color: white;
+            border-radius: 20px;
+            padding: 10px 20px;
+            font-weight: bold;
+            border: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-accent:hover {
+            background: #F0C040;
+            box-shadow: 0 0 10px #F0C040;
+        }
+
+        #skills .skill-card {
+            background: #444444;
+            color: white;
+            border-radius: 15px;
+            padding: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        #skills .skill-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        #skills .skill-card .icon img {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 15px;
+        }
+
+        #skills h4 {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        #skills p {
+            font-size: 1rem;
+            margin-top: 10px;
+        }
+
+        #skills h2 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: #F0C040;
+        }
+
+        #projects .project-card {
+            background: #333333;
+            color: white;
+            border-radius: 8px;
+            transition: transform 0.3s, box-shadow 0.3s ease, background-color 0.3s ease;
+            margin-bottom: 20px;
+        }
+
+        #projects .project-card .card-body {
+            padding: 30px;
+            text-align: center;
+        }
+
+        #projects .project-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 0px 20px rgba(173, 216, 230, 0.3);
+            background: #444444;
+        }
+
+        #projects .project-card .card-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+
+        #projects .project-card .card-text {
+            font-size: 1rem;
+        }
+
+        #projects .project-card .btn-accent {
+            background: #D4AF37;
+            color: white;
+            border-radius: 20px;
+            padding: 10px 20px;
+            font-weight: bold;
+            border: none;
+            transition: background-color 0.3s ease;
+        }
+
+        #projects .project-card .btn-accent:hover {
+            background: #F0C040;
+            box-shadow: 0 0 10px #F0C040;
+        }
+
+        footer {
+            background: #1F1F1F;
+            padding: 30px 0;
+            color: #E0E0E0;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        footer a {
+            color: #D4AF37;
+        }
+
+        footer a:hover {
+            color: #F0C040;
+        }
+
+        a {
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #F0C040;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Diya Patel</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="main">
+        <h1 data-aos="fade-up" style="color: #F0C040;">Welcome to My Portfolio</h1>
+        <p data-aos="fade-up" data-aos-delay="200"> | Frontend Developer | Web Designer</p>
+    </header>
+
+    <!-- <section id="about" class="container py-5" data-aos="fade-up" data-aos-delay="400">
+        <h2 class="text-center">About Me</h2>
+        <p class="text-center">I am a passionate UI/UX designer with experience in Figma, frontend development, and
+            responsive design. My goal is to create seamless user experiences through intuitive design.</p>
+    </section> -->
+
+    <section id="about" class="container py-5" data-aos="fade-up" data-aos-delay="400">
+        <h2 class="text-center mb-4" style="color: #F0C040;">About Me</h2>
+        <p class="text-center">Hello! I'm Diya Patel, a passionate and creative UI/UX Designer and Frontend Developer
+            with a strong focus on crafting beautiful, user-centric digital experiences. With a keen eye for design and
+            a passion for technology, I specialize in creating seamless web and mobile interfaces that are not only
+            visually appealing but also intuitive to use.</p>
+        <p class="text-center">I have experience working with a variety of design and development tools, including
+            Figma, HTML, CSS, Bootstrap, JavaScript, and more. My journey in the tech world began with an interest in
+            how design and functionality can come together to create an impactful user experience. Over time, this
+            interest evolved into a commitment to continuously learn and adapt to the ever-changing world of web
+            development and design.</p>
+        <p class="text-center">Outside of work, I enjoy experimenting with new design trends, contributing to
+            open-source projects, and collaborating with other developers and designers. My goal is to not only build
+            efficient and attractive websites but also to stay ahead of the curve in UI/UX design, ensuring that every
+            project I work on provides a meaningful and accessible user experience.</p>
+    </section>
+
+
+    <section id="skills" class="py-5" data-aos="fade-up" data-aos-delay="600">
+        <div class="container">
+            <h2 class="text-center mb-5" style="font-size: 2.5rem; font-weight: 600; color: #F0C040;">Skills</h2>
+            <div class="row">
+                <!-- Skill Item 1 - SDLC -->
+                <div class="col-md-4">
+                    <div class="skill-card text-center" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="icon">
+                            <img src="https://cdn2.iconfinder.com/data/icons/programming-77/512/SDLC-software-development-life_cycle-512.png"
+                                alt="SDLC" class="img-fluid mb-3" />
+                        </div>
+                        <h4>SDLC</h4>
+                        <p>Software Development Life Cycle</p>
+                    </div>
+                </div>
+                <!-- Skill Item 2 - Figma -->
+                <div class="col-md-4">
+                    <div class="skill-card text-center" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="icon">
+                            <img src="https://img.icons8.com/ios/452/figma.png" alt="Figma" class="img-fluid mb-3" />
+                        </div>
+                        <h4>Figma</h4>
+                        <p>UI/UX Design Tool</p>
+                    </div>
+                </div>
+                <!-- Skill Item 3 - HTML -->
+                <div class="col-md-4">
+                    <div class="skill-card text-center" data-aos="zoom-in" data-aos-delay="600">
+                        <div class="icon">
+                            <img src="https://img.icons8.com/ios/452/html-5.png" alt="HTML" class="img-fluid mb-3" />
+                        </div>
+                        <h4>HTML</h4>
+                        <p>Web Structure & Markup</p>
+                    </div>
+                </div>
+                <!-- Skill Item 4 - CSS -->
+                <div class="col-md-4">
+                    <div class="skill-card text-center" data-aos="zoom-in" data-aos-delay="800">
+                        <div class="icon">
+                            <img src="https://img.icons8.com/ios/452/css3.png" alt="CSS" class="img-fluid mb-3" />
+                        </div>
+                        <h4>CSS</h4>
+                        <p>Styling & Layouts</p>
+                    </div>
+                </div>
+                <!-- Skill Item 5 - Bootstrap -->
+                <div class="col-md-4">
+                    <div class="skill-card text-center" data-aos="zoom-in" data-aos-delay="1000">
+                        <div class="icon">
+                            <img src="https://img.icons8.com/ios/452/bootstrap.png" alt="Bootstrap"
+                                class="img-fluid mb-3" />
+                        </div>
+                        <h4>Bootstrap</h4>
+                        <p>Responsive Design Framework</p>
+                    </div>
+                </div>
+                <!-- Skill Item 6 - JavaScript -->
+                <div class="col-md-4">
+                    <div class="skill-card text-center" data-aos="zoom-in" data-aos-delay="1200">
+                        <div class="icon">
+                            <img src="https://img.icons8.com/ios/452/javascript.png" alt="JavaScript"
+                                class="img-fluid mb-3" />
+                        </div>
+                        <h4>JavaScript</h4>
+                        <p>Web Interactivity</p>
+                    </div>
+                </div>
+                <!-- Skill Item 7 - jQuery -->
+                <div class="col-md-4">
+                    <div class="skill-card text-center" data-aos="zoom-in" data-aos-delay="1400">
+                        <div class="icon">
+                            <img src="https://img.icons8.com/ios/452/jquery.png" alt="jQuery" class="img-fluid mb-3" />
+                        </div>
+                        <h4>jQuery</h4>
+                        <p>JavaScript Library</p>
+                    </div>
+                </div>
+                <!-- Skill Item 8 - Jira -->
+                <div class="col-md-4">
+                    <div class="skill-card text-center" data-aos="zoom-in" data-aos-delay="1600">
+                        <div class="icon">
+                            <img src="https://img.icons8.com/ios/452/jira.png" alt="Jira" class="img-fluid mb-3" />
+                        </div>
+                        <h4>Jira</h4>
+                        <p>Project Management</p>
+                    </div>
+                </div>
+                <!-- Skill Item 9 - GitHub -->
+                <div class="col-md-4">
+                    <div class="skill-card text-center" data-aos="zoom-in" data-aos-delay="1800">
+                        <div class="icon">
+                            <img src="https://img.icons8.com/ios/452/github.png" alt="GitHub" class="img-fluid mb-3" />
+                        </div>
+                        <h4>GitHub</h4>
+                        <p>Version Control</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects" class="container py-5" data-aos="fade-up" data-aos-delay="800">
+        <h2 class="text-center mb-4" style="color: #F0C040;">Projects</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card project-card">
+                    <div class="card-body">
+                        <h5 class="card-title">E-commerce Web Design</h5>
+                        <p class="card-text">Designed a modern e-commerce UI using Figma.</p>
+                        <a href="#" class="btn btn-accent">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card project-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Online Shopping Template</h5>
+                        <p class="card-text">Built a shopping template using HTML, CSS, and jQuery.</p>
+                        <a href="#" class="btn btn-accent">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5" data-aos="fade-up" data-aos-delay="1000">
+        <div class="container">
+            <h2 class="text-center mb-4" style="color: #F0C040;">Contact Me</h2>
+            <p class="text-center">Email: <a href="mailto:pateldiya210808@gmail.com">pateldiya210808@gmail.com</a></p>
+            <p class="text-center">LinkedIn: <a href="https://www.linkedin.com/in/diya-patel-708180330/"
+                    target="_blank">Diya Patel</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Diya Patel. All rights reserved. <br> <a href="mailto:pateldiya210808@gmail.com">Contact Me</a>
+        </p>
+    </footer>
+
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-in-out',
+            once: true,
+        });
+    </script>
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
