@@ -228,6 +228,176 @@
             color: #F0C040;
             text-decoration: underline;
         }
+
+
+        /* Ensure basic responsive structure */
+        @media (max-width: 1200px) {
+
+            /* Adjust the main header font size for medium to large screens */
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            header p {
+                font-size: 1.1rem;
+            }
+
+            /* Adjust the navbar for better fit */
+            .navbar-nav .nav-link {
+                font-size: 1rem;
+                padding: 8px 15px;
+            }
+        }
+
+        @media (max-width: 992px) {
+
+            /* Adjust navbar for smaller screens */
+            .navbar-nav .nav-link {
+                padding: 6px 12px;
+                font-size: 0.9rem;
+            }
+
+            /* Adjust header section padding and font size */
+            header {
+                padding: 80px 20px;
+            }
+
+            header h1 {
+                font-size: 2.3rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+
+            /* Stack cards and adjust layout */
+            .card-body {
+                padding: 20px;
+            }
+
+            /* Reduce skill section card size and space */
+            #skills .skill-card {
+                margin-bottom: 20px;
+            }
+
+            /* Reduce font size of skill headings */
+            #skills h4 {
+                font-size: 1.1rem;
+            }
+
+            /* Adjust project card layout */
+            #projects .project-card .card-body {
+                padding: 15px;
+            }
+
+            /* Make header text fit smaller screens */
+            header h1 {
+                font-size: 2rem;
+            }
+
+            header p {
+                font-size: 0.9rem;
+            }
+
+            /* Adjust the navbar brand font size */
+            .navbar-brand {
+                font-size: 1.2rem;
+            }
+
+            /* Adjust layout of the navbar items */
+            .navbar-nav .nav-link {
+                font-size: 0.9rem;
+                padding: 6px 12px;
+            }
+        }
+
+        @media (max-width: 576px) {
+
+            /* Stack all items in the about section */
+            #about p {
+                font-size: 0.95rem;
+            }
+
+            /* Adjust the font size of section headings */
+            #skills h2 {
+                font-size: 1.8rem;
+            }
+
+            /* Adjust layout of the navbar */
+            .navbar-nav .nav-link {
+                font-size: 0.85rem;
+                padding: 5px 10px;
+            }
+
+            /* Reduce font size in footer */
+            footer {
+                font-size: 0.9rem;
+            }
+
+            /* Adjust project card text */
+            #projects .project-card .card-title {
+                font-size: 1rem;
+            }
+
+            #projects .project-card .card-text {
+                font-size: 0.9rem;
+            }
+
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            header p {
+                font-size: 0.85rem;
+            }
+
+            /* Ensure that icons in skill cards resize properly */
+            #skills .skill-card .icon img {
+                width: 50px;
+                height: 50px;
+            }
+        }
+
+        @media (max-width: 400px) {
+
+            /* For very small screens like phones in portrait mode */
+            header {
+                padding: 60px 15px;
+            }
+
+            header h1 {
+                font-size: 1.6rem;
+            }
+
+            header p {
+                font-size: 0.8rem;
+            }
+
+            /* Reduce padding and margin for small screens */
+            .card-body {
+                padding: 15px;
+            }
+
+            .navbar-nav .nav-link {
+                font-size: 0.8rem;
+                padding: 4px 10px;
+            }
+
+            #skills h2 {
+                font-size: 1.5rem;
+            }
+
+            #projects .project-card .card-body {
+                padding: 12px;
+            }
+
+            footer {
+                font-size: 0.85rem;
+            }
+        }
     </style>
 </head>
 
