@@ -2,286 +2,390 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta name="description" content="Diya Patel – UI/UX Designer Portfolio showcasing web and Figma design projects.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <title>Diya Patel - Portfolio</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">Diya Patel</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                Diya Patel
             </div>
-        </div>
-    </nav>
-
-    <header class="main">
-        <div class="header-content">
-            <h1 data-aos="fade-up" style="color: #99CCE9;">Welcome to My Portfolio</h1>
-            <p data-aos="fade-up" data-aos-delay="200" class="mt-3">UI/UX Designer | Frontend Developer | Web Designer
-            </p>
-            <p data-aos="fade-up" data-aos-delay="200" class="mt-3">I am a passionate UI/UX designer with experience in
-                Figma,
-                frontend development, and
-                responsive design. My goal is to create seamless user experiences through intuitive design.</p>
-        </div>
-
-        <div class="header-image">
-            <img src="image/leptopbg.png" alt="" height="100%" width="100%" class="img-fluid">
-        </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#Service">Service</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section id="about" class="container py-5" data-aos="fade-up" data-aos-delay="400">
-        <h2 class="text-center mb-4" style="color: #99CCE9;">About Me</h2>
-        <p class="text-center">Hello! I'm Diya Patel, a passionate and creative UI/UX Designer and Frontend Developer
-            with a strong focus on crafting beautiful, user-centric digital experiences. With a keen eye for design and
-            a passion for technology, I specialize in creating seamless web and mobile interfaces that are not only
-            visually appealing but also intuitive to use.</p>
-        <p class="text-center">I have experience working with a variety of design and development tools, including
-            Figma, HTML, CSS, Bootstrap, JavaScript, and more. My journey in the tech world began with an interest in
-            how design and functionality can come together to create an impactful user experience. Over time, this
-            interest evolved into a commitment to continuously learn and adapt to the ever-changing world of web
-            development and design.</p>
-        <p class="text-center">Outside of work, I enjoy experimenting with new design trends, contributing to
-            open-source projects, and collaborating with other developers and designers. My goal is to not only build
-            efficient and attractive websites but also to stay ahead of the curve in UI/UX design, ensuring that every
-            project I work on provides a meaningful and accessible user experience.</p>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content" data-aos="fade-right" data-aos-duration="800">
+            <h2>Hi, I'm <span>Diya Patel</span></h2>
+            <h1><span class="auto-type"></span></h1>
+            <div class="p">
+                <p>I am a passionate UI/UX designer with experience in Figma, frontend development, and responsive
+                    design. My goal is to create seamless user experiences through intuitive design.</p>
+            </div>
+            <div class="hero-buttons">
+                <a type="button" data-aos="fade-up" data-aos-delay="200" href="#portfolio" class="btn">View
+                    Portfolio</a>
+                <a data-aos="fade-up" data-aos-delay="400" href="#contact" class="btn secondary">Contact Me</a>
+            </div>
+        </div>
+        <div class="hero-img" data-aos="fade-left" data-aos-duration="800">
+            <img src="image/i1.png" alt="Diya's Photo">
+        </div>
     </section>
 
 
-    <!-- <section id="skills" class="py-5" data-aos="fade-up" data-aos-delay="600">
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-header" data-aos="zoom-in">
+            <h2>About <span>Me</span></h2>
+            <p>Professional Profile - There Is All About Me</p>
+            <div class="line-dot">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="about-container">
+            <div class="about-image" data-aos="fade-right" data-aos-duration="800">
+                <img src="image/i1.png" alt="Diya Patel Profile">
+            </div>
+            <div class="about-content" data-aos="fade-left" data-aos-duration="800">
+                <h3>Hello! I'm Diya Patel</h3>
+                <p>
+                    A passionate UI/UX Designer and Frontend Developer from Mehsana, India. I specialize in crafting
+                    clean, intuitive, and responsive user interfaces using tools like Figma, HTML, CSS, Bootstrap,
+                    JavaScript, and jQuery.
+                </p>
+                <p>
+                    Currently undergoing industrial training at TCP India, I've built various projects, including
+                    e-commerce sites, shopping templates, and mobile app mockups. I love transforming ideas into
+                    user-centric digital experiences.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="skills-header" data-aos="zoom-in">
+            <h2>My <span>Skills</span></h2>
+            <p>What I Know</p>
+            <div class="line-dot">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="circle-skills-section">
+            <div class="circle-skill" data-aos="fade-up" data-aos-delay="100">
+                <div class="outer-circle" data-percent="90" style="--color:#f26b6b;">
+                    <div class="icon1"><img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+                            alt="Figma"></div>
+                    <div class="percent-text">90%</div>
+                </div>
+                <p>Figma</p>
+            </div>
+            <div class="circle-skill" data-aos="fade-up" data-aos-delay="200">
+                <div class="outer-circle" data-percent="85" style="--color:#6c757d;">
+                    <div class="icon1"><img src="https://cdn-icons-png.flaticon.com/512/3771/3771507.png" alt="SDLC">
+                    </div>
+                    <div class="percent-text">85%</div>
+                </div>
+                <p>SDLC</p>
+            </div>
+            <div class="circle-skill" data-aos="fade-up" data-aos-delay="300">
+                <div class="outer-circle" data-percent="95" style="--color:#ff8c00;">
+                    <div class="icon1"><img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                            alt="HTML"></div>
+                    <div class="percent-text">95%</div>
+                </div>
+                <p>HTML</p>
+            </div>
+            <div class="circle-skill" data-aos="fade-up" data-aos-delay="400">
+                <div class="outer-circle" data-percent="90" style="--color:#1e90ff;">
+                    <div class="icon1"><img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+                    </div>
+                    <div class="percent-text">90%</div>
+                </div>
+                <p>CSS</p>
+            </div>
+            <div class="circle-skill" data-aos="fade-up" data-aos-delay="500">
+                <div class="outer-circle" data-percent="85" style="--color:#7952b3;">
+                    <div class="icon1"><img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+                            alt="Bootstrap"></div>
+                    <div class="percent-text">85%</div>
+                </div>
+                <p>Bootstrap</p>
+            </div>
+            <div class="circle-skill" data-aos="fade-up" data-aos-delay="600">
+                <div class="outer-circle" data-percent="80" style="--color:#0769ad;">
+                    <div class="icon1"><img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg"
+                            alt="jQuery"></div>
+                    <div class="percent-text">80%</div>
+                </div>
+                <p>jQuery</p>
+            </div>
+            <div class="circle-skill" data-aos="fade-up" data-aos-delay="700">
+                <div class="outer-circle" data-percent="80" style="--color:#f0db4f;">
+                    <div class="icon1"><img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                            alt="JavaScript"></div>
+                    <div class="percent-text">80%</div>
+                </div>
+                <p>JavaScript</p>
+            </div>
+            <div class="circle-skill" data-aos="fade-up" data-aos-delay="800">
+                <div class="outer-circle" data-percent="80" style="--color:#0052cc;">
+                    <div class="icon1"><img
+                            src="https://static-00.iconduck.com/assets.00/jira-icon-2048x2048-nmec2job.png" alt="Jira">
+                    </div>
+                    <div class="percent-text">80%</div>
+                </div>
+                <p>Jira</p>
+            </div>
+            <div class="circle-skill" data-aos="fade-up" data-aos-delay="900">
+                <div class="outer-circle" data-percent="85" style="--color:#46586b;">
+                    <div class="icon1"><img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                            alt="GitHub"></div>
+                    <div class="percent-text">85%</div>
+                </div>
+                <p>GitHub</p>
+            </div>
+            <div class="circle-skill" data-aos="fade-up" data-aos-delay="1000">
+                <div class="outer-circle" data-percent="90" style="--color:#cd6799;">
+                    <div class="icon1"><img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="SCSS">
+                    </div>
+                    <div class="percent-text">90%</div>
+                </div>
+                <p>SCSS</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="services-section" id="Service">
         <div class="container">
-            <h2 class="text-center mb-5" style="font-size: 2.5rem; font-weight: 600; color: #99CCE9;">Skills</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="skill-card text-center" data-aos="zoom-in" data-aos-delay="200">
-                        <div class="icon">
-                            <img src="https://cdn2.iconfinder.com/data/icons/programming-77/512/SDLC-software-development-life_cycle-512.png"
-                                alt="SDLC" class="img-fluid mb-3 " />
-                        </div>
-                        <h4>SDLC</h4>
-                        <p>Software Development Life Cycle</p>
-                    </div>
+            <div class="skills-header" data-aos="zoom-in">
+                <h2>What <span>I Do</span></h2>
+                <p>I turn ideas into functional, interactive, and engaging digital products.</p>
+                <div class="line-dot">
+                    <span></span><span></span><span></span>
                 </div>
-                <div class="col-md-4">
-                    <div class="skill-card text-center" data-aos="zoom-in" data-aos-delay="400">
-                        <div class="icon">
-                            <img src="https://img.icons8.com/ios/452/figma.png" alt="Figma" class="img-fluid mb-3" />
-                        </div>
-                        <h4>Figma</h4>
-                        <p>UI/UX Design Tool</p>
-                    </div>
+            </div>
+
+            <div class="services" data-aos="zoom-in">
+                <div class="service-card">
+                    <div class="icon ui"><i class="fas fa-pencil-ruler"></i></div>
+                    <h3>Web Designer </h3>
+                    <p>Designing clean, user-friendly interfaces for web and mobile platforms.</p>
                 </div>
-                <div class="col-md-4">
-                    <div class="skill-card text-center" data-aos="zoom-in" data-aos-delay="600">
-                        <div class="icon">
-                            <img src="https://img.icons8.com/ios/452/html-5.png" alt="HTML" class="img-fluid mb-3" />
-                        </div>
-                        <h4>HTML</h4>
-                        <p>Web Structure & Markup</p>
-                    </div>
+
+                <div class="service-card">
+                    <div class="icon code"><i class="fas fa-laptop-code"></i></div>
+                    <h3>Frontend Development</h3>
+                    <p>HTML, CSS, JavaScript, Bootstrap – creating pixel-perfect websites.</p>
                 </div>
-                <div class="col-md-4">
-                    <div class="skill-card text-center" data-aos="zoom-in" data-aos-delay="800">
-                        <div class="icon">
-                            <img src="https://img.icons8.com/ios/452/css3.png" alt="CSS" class="img-fluid mb-3" />
-                        </div>
-                        <h4>CSS</h4>
-                        <p>Styling & Layouts</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="skill-card text-center" data-aos="zoom-in" data-aos-delay="1000">
-                        <div class="icon">
-                            <img src="https://img.icons8.com/ios/452/bootstrap.png" alt="Bootstrap"
-                                class="img-fluid mb-3" />
-                        </div>
-                        <h4>Bootstrap</h4>
-                        <p>Responsive Design Framework</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="skill-card text-center" data-aos="zoom-in" data-aos-delay="1200">
-                        <div class="icon">
-                            <img src="https://img.icons8.com/ios/452/javascript.png" alt="JavaScript"
-                                class="img-fluid mb-3" />
-                        </div>
-                        <h4>JavaScript</h4>
-                        <p>Web Interactivity</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="skill-card text-center" data-aos="zoom-in" data-aos-delay="1400">
-                        <div class="icon">
-                            <img src="https://img.icons8.com/ios/452/jquery.png" alt="jQuery" class="img-fluid mb-3" />
-                        </div>
-                        <h4>jQuery</h4>
-                        <p>JavaScript Library</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="skill-card text-center" data-aos="zoom-in" data-aos-delay="1600">
-                        <div class="icon">
-                            <img src="https://img.icons8.com/ios/452/jira.png" alt="Jira" class="img-fluid mb-3" />
-                        </div>
-                        <h4>Jira</h4>
-                        <p>Project Management</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="skill-card text-center" data-aos="zoom-in" data-aos-delay="1800">
-                        <div class="icon">
-                            <img src="https://img.icons8.com/ios/452/github.png" alt="GitHub" class="img-fluid mb-3" />
-                        </div>
-                        <h4>GitHub</h4>
-                        <p>Version Control</p>
-                    </div>
+
+                <div class="service-card">
+                    <div class="icon prototype"><i class="fas fab fa-figma"></i></div>
+                    <h3>Prototyping</h3>
+                    <p>Expert in Figma to design intuitive web and app interfaces.</p>
                 </div>
             </div>
         </div>
-    </section> -->
-
-    <section class="container py-5" data-aos="fade-up" data-aos-delay="800">
-        <h2 class="text-center mb-4" style="color: #99CCE9;">Skills</h2>
-
-        <div class=" row mainskill">
+    </section>
 
 
-            <div class="col-md-4">
-                <h5>SDLC</h5>
-                <div class="progress mb-4" style="height: 20px; margin-bottom: 10px;">
-                    <div class="progress-bar progress-bar-striped progress-bar-animated text-blod "
-                        style="width: 85%; background-color: #99CCE9;">
-                        85%</div>
-                </div>
-
-                <h5>Figma</h5>
-                <div class="progress mb-4" style="height: 20px; margin-bottom: 10px;">
-                    <div class="progress-bar progress-bar-striped progress-bar-animated text-blod "
-                        style="width: 95%; background-color: #99CCE9;">
-                        95%</div>
-                </div>
-
-                <h5>HTML</h5>
-                <div class="progress mb-4" style="height: 20px; margin-bottom: 10px;">
-                    <div class="progress-bar progress-bar-striped progress-bar-animated text-blod "
-                        style="width: 98%; background-color: #99CCE9;">
-                        98%</div>
-                </div>
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <div class="portfolio-header">
+            <h2>My <span>Portfolio</span></h2>
+            <p>Selected Projects & Designs</p>
+            <div class="line-dot">
+                <span></span><span></span><span></span>
             </div>
-
-
-            <div class="col-md-4">
-                <h5>CSS</h5>
-                <div class="progress mb-4" style="height: 20px; margin-bottom: 10px;">
-                    <div class="progress-bar progress-bar-striped progress-bar-animated text-blod "
-                        style="width: 90%; background-color: #99CCE9;">
-                        90%</div>
-                </div>
-
-                <h5>Bootstrap</h5>
-                <div class="progress mb-4" style="height: 20px; margin-bottom: 10px;">
-                    <div class="progress-bar progress-bar-striped progress-bar-animated text-blod "
-                        style="width: 70%; background-color: #99CCE9;">
-                        70%</div>
-                </div>
-
-                <h5>JavaScript</h5>
-                <div class="progress mb-4" style="height: 20px; margin-bottom: 10px;">
-                    <div class="progress-bar progress-bar-striped progress-bar-animated text-blod "
-                        style="width: 85%; background-color: #99CCE9;">
-                        85%</div>
-                </div>
+        </div>
+        <div class="portfolio-gallery">
+            <div class="project-card">
+                <img src="image/p1.png" alt="E-commerce Web Design">
+                <h3>E-commerce Web Design</h3>
+                <p>Designed using Figma for desktop and mobile platforms.</p>
             </div>
+            <div class="project-card">
+                <img src="image/p2.png" alt="Shopping Website Template">
+                <h3>Shopping Website Template</h3>
+                <p>Built using HTML, CSS, and jQuery </p>
+            </div>
+            <div class="project-card">
+                <img src="image/p3.png" alt="News App UI">
+                <h3>News App Design</h3>
+                <p>Modern mobile UI mockup created in Figma for a news reader app.</p>
+            </div>
+            <div class="project-card">
+                <img src="image/p4.png" alt="Informative Site Design" height="200">
+                <h3>Informative Site</h3>
+                <p>Static site with a clean, accessible layout using HTML/CSS.</p>
+            </div>
+        </div>
+    </section>
 
-            <div class="col-md-4">
-                <h5>jQuery</h5>
-                <div class="progress mb-4" style="height: 20px; margin-bottom: 10px;">
-                    <div class="progress-bar progress-bar-striped progress-bar-animated text-blod "
-                        style="width: 87%; background-color: #99CCE9;">
-                        87%</div>
-                </div>
 
-                <h5>Jira</h5>
-                <div class="progress mb-4" style="height: 20px; margin-bottom: 10px;">
-                    <div class="progress-bar progress-bar-striped progress-bar-animated text-blod "
-                        style="width: 80%; background-color: #99CCE9;">
-                        80</div>
-                </div>
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="contact-header">
+            <h2>Contact <span>Me</span></h2>
+            <p>Let's work together or just say hello!</p>
+            <div class="line-dot">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="contact-container">
+            <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required />
+                <input type="email" name="email" placeholder="Your Email" required />
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+            <div class="contact-info">
+                <p><strong>Email:</strong><a style="color: #444; text-decoration: none;"
+                        href="mailto:pateldiya210808@gmail.com">
+                        pateldiya210808@gmail.com</a></p>
+                <p><strong>Location:</strong> Mehsana, Gujarat, India</p>
+                <p><strong>Phone:</strong> +91 96428 04132</p>
 
-                <h5>GitHub</h5>
-                <div class="progress mb-4" style="height: 20px; margin-bottom: 10px;">
-                    <div class="progress-bar progress-bar-striped progress-bar-animated text-blod "
-                        style="width: 89%; background-color: #99CCE9;">
-                        89%</div>
+
+                <!-- Social Icons -->
+                <div class="social-icons" style="margin-top: 20px;">
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/diya-patel-708180330/" target="_blank"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/diya4521" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.instagram.com/uiux.diya" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="mailto:pateldiya210808@gmail.com"><i class="fas fa-envelope"></i></a>
+                    </div>
                 </div>
             </div>
 
         </div>
     </section>
 
-    <section id="projects" class="container py-5" data-aos="fade-up" data-aos-delay="800">
-        <h2 class="text-center mb-4" style="color: #99CCE9;">Projects</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card project-card">
-                    <div class="card-body">
-                        <h5 class="card-title">E-commerce Web Design</h5>
-                        <p class="card-text">Designed a modern e-commerce UI using Figma.</p>
-                        <a href="#" class="btn btn-accent">View Project</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card project-card">
-                    <div class="card-body">
-                        <h5 class="card-title">Online Shopping Template</h5>
-                        <p class="card-text">Built a shopping template using HTML, CSS, and jQuery.</p>
-                        <a href="#" class="btn btn-accent">View Project</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="py-5" data-aos="fade-up" data-aos-delay="1000">
-        <div class="container">
-            <h2 class="text-center mb-4" style="color: #99CCE9;">Contact Me</h2>
-            <p class="text-center">Email: <a href="mailto:pateldiya210808@gmail.com">pateldiya210808@gmail.com</a></p>
-            <p class="text-center">LinkedIn: <a href="https://www.linkedin.com/in/diya-patel-708180330/"
-                    target="_blank">Diya Patel</a></p>
-        </div>
-    </section>
+    <!-- footer -->
 
     <footer>
-        <p>&copy; 2025 Diya Patel. All rights reserved. <br> <a href="mailto:pateldiya210808@gmail.com">Contact Me</a>
+        <p>&copy; 2025 Diya Patel. All rights reserved.
         </p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
-        AOS.init({
-            duration: 1000,
-            easing: 'ease-in-out',
-            once: true,
+
+        // animation script
+
+        AOS.init();
+        document.querySelectorAll('.outer-circle').forEach(circle => {
+            const percent = circle.getAttribute('data-percent');
+            circle.style.setProperty('--percent', percent);
         });
+
+        // headre script
+
+        window.addEventListener("scroll", function () {
+            const navbar = document.querySelector(".navbar");
+            if (window.scrollY > 100) {
+                navbar.style.background = "#ffffff";
+                navbar.style.boxShadow = "0 2px 8px rgba(0, 0, 0, 0.1)";
+            } else {
+                navbar.style.background = "transparent";
+                navbar.style.boxShadow = "none";
+            }
+        });
+
+        // Hero section auto type text script
+
+        var typed = new Typed(".auto-type", {
+            strings: ["UI/UX Designer", "Web Developer", "Frontend Developer"],
+            typeSpeed: 50,
+            backSpeed: 30,
+            backDelay: 1500,
+            loop: true
+        });
+
+
+        // Animate progress bars when skills section is visible
+        const skillsSection = document.querySelector('.skills');
+        const progressBars = document.querySelectorAll('.progress');
+
+        window.addEventListener('scroll', () => {
+            const sectionPos = skillsSection.getBoundingClientRect().top;
+            const screenPos = window.innerHeight / 1.2;
+
+            if (sectionPos < screenPos) {
+                progressBars.forEach(bar => {
+                    bar.style.width = bar.getAttribute('data-progress');
+                });
+            }
+        });
+
+
+        //skills circle progress bar animation 
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const circle = entry.target;
+                    const targetPercent = parseInt(circle.getAttribute('data-percent'));
+                    const percentText = circle.querySelector('.percent-text');
+                    let currentPercent = 0;
+
+                    const interval = setInterval(() => {
+                        if (currentPercent <= targetPercent) {
+                            circle.style.setProperty('--percent', currentPercent);
+                            percentText.textContent = `${currentPercent}%`; // Update text in real-time
+                            currentPercent++;
+                        } else {
+                            clearInterval(interval);
+                        }
+                    }, 22);
+
+                    observer.unobserve(circle);
+                }
+            });
+        }, {
+            threshold: 0.6
+        });
+
+        document.querySelectorAll('.outer-circle').forEach(circle => {
+            observer.observe(circle);
+        });
+
     </script>
 
-    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
