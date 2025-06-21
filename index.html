@@ -17,7 +17,7 @@
 <body>
 
     <!-- Navbar -->
-    <header>
+    <!-- <header>
         <nav class="navbar">
             <div class="logo">
                 Diya Patel
@@ -31,7 +31,26 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+    </header> -->
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#Service">Service</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="right-section">
+                <div class="logo">Diya Patel</div>
+                <div class="hamburger" id="hamburger">&#9776;</div>
+            </div>
+        </nav>
     </header>
+
 
     <!-- Hero Section -->
     <section class="hero" id="home">
@@ -315,17 +334,23 @@
 
         // headre script
 
-        window.addEventListener("scroll", function () {
-            const navbar = document.querySelector(".navbar");
-            if (window.scrollY > 100) {
-                navbar.style.background = "#ffffff";
-                navbar.style.boxShadow = "0 2px 8px rgba(0, 0, 0, 0.1)";
-            } else {
-                navbar.style.background = "transparent";
-                navbar.style.boxShadow = "none";
-            }
-        });
+        // window.addEventListener("scroll", function () {
+        //     const navbar = document.querySelector(".navbar");
+        //     if (window.scrollY > 100) {
+        //         navbar.style.background = "#ffffff";
+        //         navbar.style.boxShadow = "0 2px 8px rgba(0, 0, 0, 0.1)";
+        //     } else {
+        //         navbar.style.background = "transparent";
+        //         navbar.style.boxShadow = "none";
+        //     }
+        // });
 
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
         // Hero section auto type text script
 
         var typed = new Typed(".auto-type", {
